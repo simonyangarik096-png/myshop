@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Վահանակ — MyShop</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="logo">🛍️ MyShop</a>
+      <nav class="nav-links">
+        <a href="/" data-i18n="nav.home">Գլխավոր</a>
+        <a href="/shop.html" data-i18n="nav.shop">Խանութ</a>
+        <a href="/cart.html" data-i18n="nav.cart">Զամբյուղ</a>
+        <a href="/dashboard.html" data-i18n="nav.dashboard">Վահանակ</a>
+      </nav>
+      <div class="nav-right">
+        <select id="langSelect" class="lang-select">
+          <option value="hy">🇦🇲 Հայ</option>
+          <option value="ru">🇷🇺 Рус</option>
+          <option value="en">🇬🇧 Eng</option>
+        </select>
+        <button class="btn btn-outline" id="btnLogout" data-i18n="nav.logout">Ելք</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 style="padding:20px 0" data-i18n="dashboard.title">Վաճառողի վահանակ</h1>
+    <div id="dashWrap">
+      <div class="loading" data-i18n="common.loading">Բեռնվում է...</div>
+    </div>
+  </main>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
